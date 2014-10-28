@@ -10,6 +10,8 @@ This data comes from recordings of 30 subjects while preforming daily activities
 
 You can find the original data [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) [1]. The user can refer to the **README.txt** and **features_info.txt** provided with the original data to learn more about the methodology used to obtain the data.
 
+## Transformations
+
 The run_analysis.R script essentially pastes together the different tables from the original data set into one unified data frame. Then subsets it to include only variables of mean and standard deviation. Then it averages all variables by subject and activity.
 
 ## Variable Information
@@ -26,7 +28,7 @@ Quoting directly from the **features_info.txt** [1]:
 
 Hence all features (i.e. variables) have been normalized and appear in a range of [-1:1].
 
-In the **tidy_data.txt** file you will find only the *mean* and *standard deviation* of the following features or variables averaged by subject and activity:
+In the **tidy_data.txt** file you will find only the *mean*, *standard deviation* and *mean frequency* of the following features or variables all averaged by subject and activity:
 
 * Time series Body Accelerometer XYZ-axes
 * Time series Gravity Accelerometer XYZ-axes
@@ -46,7 +48,7 @@ In the **tidy_data.txt** file you will find only the *mean* and *standard deviat
 * Frequency Body Gyroscope Magnitude
 * Frequency Body Gyroscope Jerk Magnitude
 
-The variable names have been modified from their original version to improve readability.
+The variable names have been modified from their original version to improve readability. In the class forums there was some debate whereas to include mean frequency measurments. I figured having them there just in case wouldn't hurt anyone.
 
 ## References
 
